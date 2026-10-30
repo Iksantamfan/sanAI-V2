@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8fafd">
+  <title>San AI</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="rail" id="rail">
+      <button class="rail-btn menu" id="menuBtn" aria-label="Menu">☰</button>
+      <button class="rail-btn new" id="newChat" aria-label="New chat">＋</button>
+      <div class="rail-spacer"></div>
+      <button class="rail-btn" aria-label="Help">?</button>
+      <button class="rail-btn" aria-label="Settings">⚙</button>
+      <div class="profile">I</div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div class="brand">San AI <span class="model-tag">2.0</span><span class="down">⌄</span></div>
+        <div class="top-actions"><button class="upgrade">✦ Get Plus</button><div class="top-avatar">I</div></div>
+      </header>
+      <section class="workspace" id="workspace">
+        <div id="welcome" class="welcome">
+          <div class="greeting"><span class="hello">Hello, Iksan</span><br><span class="question">Where should we start?</span></div>
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="Bantu aku memahami sebuah topik dengan sederhana."><span class="s-icon blue">✧</span><span><b>Learn something</b><small>Break down a complex topic</small></span><span class="arrow">↗</span></button>
+            <button class="suggestion" data-prompt="Bantu aku membuat ide kreatif untuk proyek baru."><span class="s-icon purple">✳</span><span><b>Make a plan</b><small>Turn an idea into a clear plan</small></span><span class="arrow">↗</span></button>
+            <button class="suggestion" data-prompt="Bantu aku menulis sesuatu dengan gaya yang natural."><span class="s-icon orange">✎</span><span><b>Write anything</b><small>Start with a rough draft</small></span><span class="arrow">↗</span></button>
+            <button class="suggestion" data-prompt="Bantu aku mencari solusi untuk masalah ini: "><span class="s-icon green">⌁</span><span><b>Explore ideas</b><small>Think through a problem</small></span><span class="arrow">↗</span></button>
+          </div>
+        </div>
+        <div id="messages" class="messages"></div>
+      </section>
+      <footer class="composer-area">
+        <form id="composer" class="composer">
+          <textarea id="prompt" rows="1" placeholder="Ask San AI" autocomplete="off"></textarea>
+          <div class="composer-tools">
+            <div class="left-tools"><button type="button" class="tool-btn" title="Attach file">＋</button><button type="button" class="tool-chip">✧ Tools <span>⌄</span></button></div>
+            <div class="right-tools"><span class="model-hint">Fast</span><button id="send" type="submit" aria-label="Send">↑</button></div>
+          </div>
+        </form>
+        <p class="disclaimer">San AI may display inaccurate info, so double-check its responses.</p>
+      </footer>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
